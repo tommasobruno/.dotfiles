@@ -9,4 +9,4 @@
     defaultBranch = main
 
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ./.gitignore_global
