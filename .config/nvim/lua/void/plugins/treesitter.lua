@@ -10,10 +10,11 @@ return {
       "c",
       "lua",
       "zig",
+      "git_config",
     },
 
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
 
     indent = {
       enable = true,
