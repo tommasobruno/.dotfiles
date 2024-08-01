@@ -2,7 +2,7 @@ return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
-    theme = "gruvbox",
+    theme = "auto",
     icons_enabled = true,
     componentSeparators = {
       left = "|",
