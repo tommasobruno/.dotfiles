@@ -28,13 +28,7 @@ M.servers_configurations = {
   },
 }
 
-M.capabilities = vim.tbl_deep_extend(
-  "force",
-  {},
-  vim.lsp.protocol.make_client_capabilities(),
-  cmp.default_capabilities()
-)
-
+M.capabilities = cmp.default_capabilities()
 M.on_attach = function(_, buf)
   local m = vim.keymap
   local opts = { buffer = buf, noremap = true, silent = true }
