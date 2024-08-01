@@ -1,6 +1,4 @@
-local base = require("voidkrc.utils.base")
-base.loadGlobals()
-base.loadOptions()
+require("voidkrc.utils.base")
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
