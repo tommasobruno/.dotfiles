@@ -2,5 +2,8 @@
     name = voidkrc
     email = bruno.tommaso@protonmail.com 
 
+[pull]
+    rebase = true
+
 [init]
     defaultBranch = main
