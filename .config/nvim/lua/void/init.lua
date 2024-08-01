@@ -1,0 +1,1 @@
+require("void.config.lazy")
