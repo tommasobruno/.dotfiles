@@ -1,1 +1,1 @@
-require("void")
+require("voidkrc")

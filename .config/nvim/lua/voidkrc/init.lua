@@ -1,4 +1,4 @@
-local base = require("void.utils.base")
+local base = require("voidkrc.utils.base")
 base.loadGlobals()
 base.loadOptions()
 
@@ -24,7 +24,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- import your plugins
-    { import = "void.plugins" },
+    { import = "voidkrc.plugins" },
   },
   -- automatically check for plugin updates
   checker = { enabled = true },
