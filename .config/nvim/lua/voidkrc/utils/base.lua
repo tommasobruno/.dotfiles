@@ -8,7 +8,7 @@ g.maplocalleader = " "
 -- Format
 o.shiftwidth = 2
 o.smartindent = true
-
+o.completeopt = "menu,menuone,noselect,preview"
 -- Only match correct lower/upper case
 o.smartcase = true
 o.ignorecase = true
