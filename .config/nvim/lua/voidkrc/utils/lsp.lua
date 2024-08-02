@@ -28,39 +28,47 @@ M.servers_configurations = {
   },
 }
 
-M.capabilities = cmp.default_capabilities()
+M.capabilities = function()
+  return vim.tbl_deep_extend(
+    "force",
+    {},
+    vim.lsp.protocol.make_client_capabilities(),
+    cmp.default_capabilities()
+  )
+end
+
 M.on_attach = function(_, buf)
-  local m = vim.keymap
+  local map = vim.keymap.set
   local opts = { buffer = buf, noremap = true, silent = true }
 
-  m.set("n", "gd", function()
+  map("n", "gd", function()
     vim.lsp.buf.definition()
   end, opts)
-  m.set("n", "K", function()
+  map("n", "K", function()
     vim.lsp.buf.hover()
   end, opts)
-  m.set("n", "<leader>vws", function()
+  map("n", "<leader>vws", function()
     vim.lsp.buf.workspace_symbol()
   end, opts)
-  m.set("n", "<leader>vd", function()
+  map("n", "<leader>vd", function()
     vim.diagnostic.open_float()
   end, opts)
-  m.set("n", "<leader>vca", function()
+  map("n", "<leader>vca", function()
     vim.lsp.buf.code_action()
   end, opts)
-  m.set("n", "<leader>vrr", function()
+  map("n", "<leader>vrr", function()
     vim.lsp.buf.references()
   end, opts)
-  m.set("n", "<leader>vrn", function()
+  map("n", "<leader>vrn", function()
     vim.lsp.buf.rename()
   end, opts)
-  m.set("i", "<C-h>", function()
+  map("i", "<C-h>", function()
     vim.lsp.buf.signature_help()
   end, opts)
-  m.set("n", "[d", function()
+  map("n", "[d", function()
     vim.diagnostic.goto_next()
   end, opts)
-  m.set("n", "]d", function()
+  map("n", "]d", function()
     vim.diagnostic.goto_prev()
   end, opts)
 end
