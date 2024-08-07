@@ -1,19 +1,10 @@
 return {
-  "rose-pine/neovim",
-  name = "rose-pine",
+  dir = "~/git/colorkrc.nvim",
+  name = "colorkrc",
+  lazy = false,
+  enabled = true,
   priority = 1000,
-  init = function()
-    vim.cmd("colorscheme rose-pine")
+  config = function()
+    require("colorkrc").colorscheme()
   end,
-  opts = {
-    variant = "dark",
-    dark_variant = "main",
-    extend_background_behind_borders = false,
-    enable = {
-      terminal = true,
-    },
-    styles = {
-      transparency = true,
-    },
-  },
 }

@@ -1,4 +1,12 @@
 require("voidkrc.utils.base")
+require("voidkrc.utils.keymaps")
+
+-- Set filetypes
+vim.filetype.add({
+  extension = {
+    h = "c",
+  },
+})
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

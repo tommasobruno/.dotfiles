@@ -9,7 +9,7 @@ export NVM_DIR="$HOME/.nvm"
 # Aliases
 alias vim="nvim"
 alias vvim="nvim"
-alias ls="ls -al"
+alias ls="ls -alG"
 
 # Prompt
 autoload -Uz vcs_info

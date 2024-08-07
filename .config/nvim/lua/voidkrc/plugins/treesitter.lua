@@ -11,6 +11,7 @@ return {
       "lua",
       "zig",
       "git_config",
+      "bash",
     },
 
     sync_install = false,

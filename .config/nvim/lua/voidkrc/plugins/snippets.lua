@@ -32,9 +32,15 @@ return {
   end,
 
   main = "luasnip.config",
-  opts = {
-    history = true,
-    updateevents = "TextChanged,TextChangedI",
-    override_builtin = true,
-  },
+  opts = function()
+    for _, ft_path in ipairs(vim.api.nvim_get_runtime_file("lua/voidkrc/snippets/*.lua", true)) do
+      loadfile(ft_path)()
+    end
+
+    return {
+      history = true,
+      updateevents = "TextChanged,TextChangedI",
+      override_builtin = true,
+    }
+  end,
 }

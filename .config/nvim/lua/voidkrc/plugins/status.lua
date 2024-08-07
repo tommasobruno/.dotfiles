@@ -1,9 +1,8 @@
 return {
   "nvim-lualine/lualine.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     theme = "auto",
-    icons_enabled = true,
+    icons_enabled = false,
     componentSeparators = {
       left = "|",
       right = "|",

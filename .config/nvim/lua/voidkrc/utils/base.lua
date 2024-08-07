@@ -1,5 +1,5 @@
 local g = vim.g
-local o = vim.o
+local o = vim.opt
 
 -- Globals
 g.mapleader = " "
@@ -9,6 +9,9 @@ g.maplocalleader = " "
 o.shiftwidth = 2
 o.smartindent = true
 o.completeopt = "menu,menuone,noselect,preview"
+o.hlsearch = false
+o.incsearch = true
+
 -- Only match correct lower/upper case
 o.smartcase = true
 o.ignorecase = true
@@ -21,9 +24,10 @@ o.mouse = "a"
 o.cursorline = true
 o.guicursor = ""
 
--- Sidebar --
+-- Sidebar
 o.signcolumn = "no"
 o.number = true
 o.relativenumber = true
 
-o.termguicolors = true
+-- Rest
+o.updatetime = 50
