@@ -1,0 +1,29 @@
+[user]
+    name = voidkrc
+    email = bruno.tommaso@protonmail.com 
+
+[init]
+    defaultBranch = main
+
+
+[pull]
+    rebase = true
+
+[push]
+  default = current
+
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+[core]
+    excludesfile = ./ignore
+
+[delta]
+  line-numbers = true
+  syntax-theme = gruvbox
+  side-by-side = false
+
+  file-modified-label = modified:
+
+[credential "https://github.com"]
+    helper = !/usr/bin/gh auth git-credential

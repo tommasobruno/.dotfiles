@@ -1,6 +1,6 @@
 local map = vim.keymap.set
 
--- Keymaps
+-- Moving between panes
 map("n", "<c-j>", "<c-w><c-j>")
 map("n", "<c-k>", "<c-w><c-k>")
 map("n", "<c-l>", "<c-w><c-l>")

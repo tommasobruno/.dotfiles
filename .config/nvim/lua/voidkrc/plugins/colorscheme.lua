@@ -1,5 +1,5 @@
 return {
-  dir = "~/git/colorkrc.nvim",
+  dir = "~/git/nvim-plugins/colorkrc.nvim",
   name = "colorkrc",
   lazy = false,
   enabled = true,

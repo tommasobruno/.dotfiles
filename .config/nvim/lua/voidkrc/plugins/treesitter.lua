@@ -12,6 +12,7 @@ return {
       "zig",
       "git_config",
       "bash",
+      "yaml",
     },
 
     sync_install = false,

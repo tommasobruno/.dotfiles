@@ -1,3 +1,5 @@
+export EDITOR="nvim"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -8,7 +10,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Aliases
 alias vim="nvim"
-alias vvim="nvim"
+alias vi="nvim"
 alias ls="ls -alG"
 
 # Prompt
